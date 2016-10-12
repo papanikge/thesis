@@ -23,7 +23,7 @@ Standler, W{\"u}rthinger et al\cite{stadler2014partial} που μελετά, π�
 subsystems, και modules. Το module που υλοποιούμε υπόκειται στο σύστημα
 RPython, στο subsystem του translator, στην ομάδα των backend
 βελτιστοποιήσεων. Βρίσκεται επομένως στο ακόλουθο μονοπάτι:
-\path{pypy/rpython/translator/backendopt/partial_escape.py}. Ο κώδικας
+\path{pypy/rpython/translator/backendopt/partial_}\\ \path{escape.py}. Ο κώδικας
 βρίσκεται σε ένα fork\cite{fork} του επίσημου \textit{repository} του
 PyPy\cite{repo} στη σελίδα bitbucket\footnote{\url{http://bitbucket.com}}. Η
 υλοποίηση έγινε με την βοήθεια του εργαλείου διαχείρησης εκδόσεων κώδικα (SCM)
@@ -325,7 +325,7 @@ arguments του \texttt{Block} θα μπει στην μεταβλητή που
 σύστημα που τα ``ζωγραφίζει" στην οθόνη. Τα \texttt{Link}s περιέχουν τα
 αντίστοιχα arguments και την μεταβλητή \texttt{target} που ``δείχνει" στο επόμενο
 \texttt{Block}. Επιπλέον περιέχουν τις ειδικές μεταβλητές
-\texttt{last\_exception} και \texttt{last\_exc\_value} που χρησιμοποιεί το
+\texttt{last\_exception} \& \texttt{last\_exc\_value} που χρησιμοποιεί το
 μοντέλο για την διαχείριση των εξαιρέσεων και φυσικά όπως και τα
 \texttt{Block}s, εσωτερικές πληροφορίες. Από τα περιεχόμενα των graph μεταβλητών
 αυτά που πρέπει να τονίσουμε είναι τα \texttt{exceptblock} \texttt{returnblock}
@@ -397,7 +397,7 @@ tests είναι επιτυχή, προσθέτοντας κάθε φορά κα
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{simplest-func.png}
-\caption{simplest diagram}
+\caption{Very simple diagram. Screenshot from the diagram editor.}
 \label{figure-4}
 \end{figure}
 
@@ -418,7 +418,7 @@ tests είναι επιτυχή, προσθέτοντας κάθε φορά κα
 \subsection{Split}
 
 \begin{wrapfigure}{H}{6.5cm}
-\caption{State split}
+\caption{State split. Screenshot from the diagram editor.}
 \label{wrapped-figure}
 \includegraphics[width=6.5cm]{split-state.png}
 \end{wrapfigure} 
@@ -496,7 +496,7 @@ branches, καθώς ο μεταγλωττιστής δεν μπορεί να ξ
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{loop-func.png}
-\caption{loop diagram}
+\caption{Loop diagram. Screenshot from the diagram editor.}
 \label{figure-5}
 \end{figure}
 
@@ -568,6 +568,7 @@ branch στην ροή του προγράμματος στις οποίες κ�
 \caption{Extra Block Problem Solution}
 \label{figure-8:b}
 \end{subfigure}
+\caption{Screenshot from the diagram editor.} %%%%%%%%%%%%%%%%%%%%%
 \end{figure}
 
 Στο \ref{figure-8:b} φαίνεται το διάγραμμα μετά την λύση που εφαρμόσαμε. Το
@@ -598,7 +599,8 @@ branch στην ροή του προγράμματος στις οποίες κ�
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{needs-extra-block-med.png}
-\caption{Extra Block Problem Solution (before cleaning up)}
+\caption{Extra Block Problem Solution (before cleaning up).
+Screenshot from the diagram editor.}
 \label{figure-8c}
 \end{figure}
 

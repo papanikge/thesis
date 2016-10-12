@@ -93,7 +93,7 @@ annotator για να μετατρέψει τα statements και τις εντ�
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.5\textwidth]{diagram.png}
-\caption{diagram of RPython translation process}
+\caption{Diagram of RPython translation process. \cite{rigo2005}}
 \label{figure-1}
 \end{figure}
 
@@ -102,7 +102,7 @@ annotator για να μετατρέψει τα statements και τις εντ�
 \subsection{Τρόπος δημιουργίας}
 
 Ο σκοπός του κατασκευαστή γραφημάτων (υλοποιημένος στο module
-\texttt{rpython.flowspace}) είναι να μετατρέψει τα αντικείμενα συναρτήσεων σε
+\texttt{rpython. \\ flowspace}) είναι να μετατρέψει τα αντικείμενα συναρτήσεων σε
 γραφήματα. Κανονικά οι μεταγλωττιστές παίρνουν μια συνάρτηση και την
 μετατρέπουν σε ενδιάμεσο bytecode κώδικα σε κάποια εικονική μηχανή (VM) και
 έπειτα την τρέχουν. Στο RPython όμως χρησιμοποιείται ένα \textit{abstract
@@ -118,7 +118,7 @@ interpretation} το οποίο λειτουργώντας αφαιρετικά 
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{simple-func-bef.png}
-\caption{simple function flow diagram}
+\caption{Simple function flow diagram. Screenshot from the diagram editor.}
 \label{figure-2}
 \end{figure}
 
@@ -147,7 +147,7 @@ abstract interpreter} δεν ξέρει φυσικά αν η συνθήκη θα
 \subsection{Το μοντέλο}
 
 Η βασική συνάρτηση που δημιουργεί τις δομές δεδομένων που απαρτίζουν το μοντέλο
-είναι η \texttt{build\_flow()}. Η μονάδα (unit) ροής είναι το αντικείμενο
+είναι η \texttt{build\_flow()}. Η μονάδα (unit) ροής είναι το αντικείμενο \\
 \texttt{FunctionGraph} το οποίο μαζί με τα υπόλοιπα (που συνήθως περιέχονται σε
 αυτό) ορίζονται στο αρχείο \texttt{rpython/flowspace/model.py}. Τα περιγράφουμε
 παρακάτω:
@@ -295,7 +295,7 @@ runtime. Μπορεί προφανώς να είναι όρισμα σε κάπ�
 οικογένεια αντικειμένων. Η κλάση βάσης, όπως είπαμε, είναι η
 \texttt{SomeObject}, η οποία αντιπροσωπεύει ένα αντικείμενο Python. Υποκλάσεις
 της είναι – μεταξύ άλλων – οι: \texttt{SomeInteger()} (με την επιλογή
-\texttt{nonneg=True} ανάλογα άν χρειάζονται αρνητικοί αριθμοί),
+\texttt{nonneg=True} ανάλογα άν χρειάζονται αρνητικοί αριθμοί), \\
 \texttt{SomeString()}, \texttt{SomeChar()} και \texttt{SomeTuple()}, οι οποίοι
 αντιπροσωπεύουν τα προφανή αντικείμενα. Να σημειώσουμε εδώ ότι όλα τα παραπάνω 
 αντικείμενα υπογραφών είναι αμετάβλητα, δηλαδή δεν αλλάζουν \textit{in-place}. 
